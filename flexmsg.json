@@ -1,0 +1,135 @@
+{
+  "type": "bubble",
+  "size": "giga",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Q&A โรคติดเชื้อโควิด-19",
+        "size": "16px",
+        "weight": "bold",
+        "align": "center",
+        "margin": "0px",
+        "offsetTop": "0px",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px"
+      }
+    ],
+    "paddingAll": "0px",
+    "paddingTop": "10px"
+  },
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "โรคติดเชื้อโควิด-19",
+              "uri": "https://line.me/R/home/public/post?id=066nlnao&postId=1162875221509063712"
+            },
+            "margin": "sm",
+            "height": "sm",
+            "style": "secondary"
+          },
+          {
+            "type": "separator",
+            "margin": "sm"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "ข้อสงสัยเรื่องวัคซีนฯ",
+              "uri": "https://line.me/R/home/public/post?id=066nlnao&postId=1162875224509063748"
+            },
+            "margin": "sm",
+            "height": "sm",
+            "style": "secondary"
+          },
+          {
+            "type": "separator",
+            "margin": "sm"
+          }
+        ],
+        "margin": "none",
+        "spacing": "none",
+        "paddingAll": "1%"
+      },
+      {
+        "type": "separator",
+        "margin": "none"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "การดูแลสุขภาพ",
+              "text": "การดูแลสุขภาพ"
+            },
+            "margin": "sm",
+            "height": "sm",
+            "style": "secondary"
+          },
+          {
+            "type": "separator",
+            "margin": "sm"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "มาตรการป้องกัน",
+              "text": "มาตรการป้องกัน"
+            },
+            "margin": "sm",
+            "height": "sm",
+            "style": "secondary"
+          },
+          {
+            "type": "separator",
+            "margin": "sm"
+          }
+        ],
+        "paddingAll": "1%"
+      }
+    ],
+    "spacing": "none",
+    "margin": "none",
+    "paddingAll": "2px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "อ่านเพิ่มเติม",
+          "uri": "https://line.me/R/home/public/main?id=066nlnao"
+        },
+        "height": "sm",
+        "style": "primary",
+        "gravity": "center"
+      }
+    ],
+    "action": {
+      "type": "uri",
+      "label": "กลับสู่หน้าหลัก",
+      "uri": "https://line.me/R/home/"
+    }
+  }
+}
