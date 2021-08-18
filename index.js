@@ -43,8 +43,8 @@ async function main() {
       btnShare.style.display = 'block';
       btnLogIn.style.display = 'none';
       btnLogOut.style.display = 'block';
-      getUserProfile()
-      getFriendship()
+      getUserProfile();
+      getFriendship();
     } else {
       btnLogIn.style.display = 'block';
       btnLogOut.style.display = 'none';
@@ -53,15 +53,15 @@ async function main() {
     btnSend.style.display = 'block';
     btnSend.style.display = 'block';
     btnShare.style.display = 'block';
-    getUserProfile()
-    getFriendship()
+    getUserProfile();
+    getFriendship();
   }
 
   if (liff.isInClient() && liff.getOS() === 'android') {
     btnScanCode.style.display = 'block';
   }
 
-  btnOpenWindow.style.display = "block"  
+  btnOpenWindow.style.display = 'block';
 }
 
 async function shareMsg() {
@@ -74,34 +74,17 @@ async function shareMsg() {
   ]);
 }
 
-/*async function sendMsg() {
-  if (
-    liff.getContext().type !== 'none' &&
-    liff.getContext().type !== 'external'
-  ) {
+async function sendMsg() {
+  if (liff.getContext().type !== 'none') {
     await liff.sendMessages([
       {
         type: 'text',
-        text: 'This message was sent by sendMessages()'
+        text: 'Welcome'
       }
     ]);
-    alert('Message sent');
-  }
-}*/
-
-async function sendMsg() {
-  if (liff.getContext().type !== "none") {
-    await liff.sendMessages([
-      {
-        "type": "text",
-        "text": "This message was sent by sendMessages()"
-      }
-    ])
-    liff.closeWindow()
+    liff.closeWindow();
   }
 }
-
-
 
 async function getUserProfile() {
   const profile = await liff.getProfile();
@@ -119,14 +102,15 @@ async function scanCode() {
 }
 
 async function getFriendship() {
-  let msg = "Hooray! You and our chatbot are friend."
-  const friend = await liff.getFriendship()
+  let msg = 'Hooray! You and our chatbot are friend.';
+  const friend = await liff.getFriendship();
   if (!friend.friendFlag) {
-     msg = "<a href=\"https://line.me/R/ti/p/@BOT-ID\">Follow our chatbot here!</a>"
+    msg =
+      '<a href="https://line.me/R/ti/p/@BOT-ID">Follow our chatbot here!</a>';
   }
   friendShip.innerHTML = msg;
+  sendMsg();
 }
-
 
 btnOpenWindow.onclick = () => {
   liff.openWindow({
