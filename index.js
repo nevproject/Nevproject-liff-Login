@@ -74,6 +74,17 @@ async function shareMsg() {
   ]);
 }
 
+async function sendWelcomeMsg() {
+  if (liff.getContext().type !== 'none') {
+    await liff.sendMessages([
+      {
+        type: 'text',
+        text: 'Welcome'
+      }
+    ]);
+  }
+}
+
 async function sendMsg() {
   if (liff.getContext().type !== 'none') {
     await liff.sendMessages([
@@ -109,6 +120,7 @@ async function getFriendship() {
       '<a href="https://line.me/R/ti/p/@BOT-ID">Follow our chatbot here!</a>';
   }
   friendShip.innerHTML = msg;
+  sendWelcomeMsg();
   liff.closeWindow();
 }
 
