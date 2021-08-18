@@ -109,7 +109,7 @@ async function getFriendship() {
       '<a href="https://line.me/R/ti/p/@BOT-ID">Follow our chatbot here!</a>';
   }
   friendShip.innerHTML = msg;
-  sendMsg();
+  liff.closeWindow();
 }
 
 btnOpenWindow.onclick = () => {
